@@ -23,6 +23,7 @@ int _printf(const char *format, ...)
 		{"x", _hex_l},
 		{"X", _hex_u},
 		{"o", _oct},
+		{"R", _rot13},
 		{NULL, NULL}
 	};
 

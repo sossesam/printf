@@ -34,4 +34,5 @@ int _hex_l(va_list hexa);
 int _hex_str(unsigned int n, unsigned int hex, char alpha);
 int _hex_u(va_list hexa);
 int _oct(va_list octo);
+int _rot13(va_list rot);
 #endif
