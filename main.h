@@ -30,5 +30,8 @@ int _integer(va_list);
 int _decimal(va_list);
 int _bin(va_list argu);
 int _ui(va_list unsign);
-
+int _hex_l(va_list hexa);
+int _hex_str(unsigned int n, unsigned int hex, char alpha);
+int _hex_u(va_list hexa);
+int _oct(va_list octo);
 #endif
