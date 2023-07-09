@@ -284,6 +284,27 @@ int _backwards(va_list argu){
 	return (i);
 }
 
+int convert_int_to_hex(int a) {
+int i;
+if(a < 10){
+	_putchar('0');
+	_putchar('0' + a);
+}
+if(a > 9 && a < 16){
+	_putchar('0');
+	_putchar('A' - 10 + a);
+}else{
+	while (a > 0) {
+    int digit = a % 16;
+    putchar(digit < 10 ? digit + '0' : digit + 'A' - 10);
+    a /= 16;
+  }
+  return (2);
+}
+
+
+ return (i);
+}
 
 int string_toupper(va_list argu)
 {
@@ -293,13 +314,15 @@ int string_toupper(va_list argu)
 
 
     n = 0;
-    while (*(str + n) != '\0')
+    while (str[n] != '\0')
     {
-        if(*(str + n) >= 97 && *(str + n) <= 122)
+        if((*(str + n) >= 97 && *(str + n) <= 122) || (*(str + n) >= 65 && *(str + n) <= 90))
         {
-            _putchar(*(str + n));
+            _putchar(str[n]);
         }else{
-			_hex_u(*(str + n));
+			_putchar('\\');
+			_putchar('x');
+			convert_int_to_hex(str[n]);
 		}
 
         n++;
