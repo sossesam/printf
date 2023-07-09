@@ -312,10 +312,12 @@ int string_toupper(va_list argu)
     n = 0;
     while (str[n] != '\0')
     {
-        if((str[n] > 31 && str[n] < 127  )|| str[n] == 10 )
+        if((str[n] > 31 && str[n] < 127  )||( str[n] == 10) )
         {
             _putchar(str[n]);
         }else{
+			 _putchar('\\');
+			  _putchar('x');
 			n += convert_int_to_hex(str[n]);
 		}
 
