@@ -285,7 +285,6 @@ int _backwards(va_list argu){
 }
 
 int convert_int_to_hex(int a) {
-int i;
 if(a < 10){
 	_putchar('0');
 	_putchar('0' + a);
@@ -299,11 +298,8 @@ if(a > 9 && a < 16){
     putchar(digit < 10 ? digit + '0' : digit + 'A' - 10);
     a /= 16;
   }
-  return (2);
 }
-
-
- return (i);
+return (2);
 }
 
 int string_toupper(va_list argu)
