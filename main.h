@@ -37,4 +37,5 @@ int _oct(va_list octo);
 int _rot13(va_list rot);
 int _backwards(va_list argu);
 char string_toupper(char *str);
+
 #endif

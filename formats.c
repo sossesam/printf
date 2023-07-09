@@ -301,5 +301,5 @@ char string_toupper(char *str)
         n++;
     }
 
-   return (str);
+   return (n);
 }
