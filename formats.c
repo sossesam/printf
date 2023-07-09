@@ -285,9 +285,11 @@ int _backwards(va_list argu){
 }
 
 
-int string_toupper(char *str)
+int string_toupper(va_list argu)
 {
     int n;
+	char *str;
+	str = va_arg(argu, char *);
 
 
     n = 0;
