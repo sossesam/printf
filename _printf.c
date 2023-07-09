@@ -24,6 +24,7 @@ int _printf(const char *format, ...)
 		{"X", _hex_u},
 		{"o", _oct},
 		{"R", _rot13},
+		{"r", print_string_in_reverse_recursive},
 		{NULL, NULL}
 	};
 

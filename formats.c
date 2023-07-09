@@ -267,3 +267,12 @@ int _rot13(va_list rot)
 	}
 	return (count);
 }
+
+void print_string_in_reverse_recursive(const char *str) {
+  if (*str == '\0') {
+    return;
+  } else {
+    print_string_in_reverse_recursive(str + 1);
+    putchar(*str);
+  }
+}
