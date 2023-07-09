@@ -312,7 +312,7 @@ int string_toupper(va_list argu)
     n = 0;
     while (str[n] != '\0')
     {
-        if((*(str + n) >= 97 && *(str + n) <= 122) || (*(str + n) >= 65 && *(str + n) <= 90))
+        if(str[n] > 32 || str[n] == 10 || str[n] == ' ')
         {
             _putchar(str[n]);
         }else{
