@@ -35,5 +35,5 @@ int _hex_str(unsigned int n, unsigned int hex, char alpha);
 int _hex_u(va_list hexa);
 int _oct(va_list octo);
 int _rot13(va_list rot);
-void print_string_in_reverse_recursive(const char *str);
+int _backwards(const char *format, convert list[], va_list argu);
 #endif
