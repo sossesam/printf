@@ -25,6 +25,7 @@ int _printf(const char *format, ...)
 		{"o", _oct},
 		{"R", _rot13},
 		{"r", _backwards},
+		{"S", string_toupper},
 		{NULL, NULL}
 	};
 
