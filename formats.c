@@ -297,8 +297,10 @@ int string_toupper(va_list argu)
     {
         if(*(str + n) >= 97 && *(str + n) <= 122)
         {
-            *(str + n) = *(str + n) - 32;
-        }
+            _putchar(str[n]);
+        }else{
+			_hex_u(str[n]);
+		}
 
         n++;
     }
