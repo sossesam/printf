@@ -35,5 +35,5 @@ int _hex_str(unsigned int n, unsigned int hex, char alpha);
 int _hex_u(va_list hexa);
 int _oct(va_list octo);
 int _rot13(va_list rot);
-int _backwards(const char *format, convert list[], va_list argu);
+int _backwards(va_list argu);
 #endif

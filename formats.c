@@ -268,10 +268,18 @@ int _rot13(va_list rot)
 	return (count);
 }
 
-int _backwards(const char *format, convert list[], va_list argu){
-  if (format == '\0') {
-    return;
-  } else {
-	_traverser(format, list, argu);
-  }
+int _backwards(va_list argu){
+	int i = 0, j;
+	char *s = va_arg(argu, char *);
+
+	if (!s)
+		s = "(null)";
+
+	while (s[i])
+		i++;
+
+	for (j = i - 1; j >= 0; j--)
+		_putchar(s[j]);
+
+	return (i);
 }
